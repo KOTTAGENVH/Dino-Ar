@@ -20,7 +20,6 @@
 		46C53DFE2BF60F1E00CCB606 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C53DFA2BF60F1E00CCB606 /* PlaySound.swift */; };
 		46C53DFF2BF60F1E00CCB606 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C53DFB2BF60F1E00CCB606 /* Toast.swift */; };
 		46C53E022BF60F5E00CCB606 /* Markerview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C53E002BF60F5E00CCB606 /* Markerview.swift */; };
-		46C53E162BF60F8500CCB606 /* Animated_T-Rex_Dinosaur_Fight_Loop.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E032BF60F8500CCB606 /* Animated_T-Rex_Dinosaur_Fight_Loop.usdz */; };
 		46C53E172BF60F8500CCB606 /* archaeopteryx.scn in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E042BF60F8500CCB606 /* archaeopteryx.scn */; };
 		46C53E182BF60F8500CCB606 /* archaeopteryx.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E052BF60F8500CCB606 /* archaeopteryx.usdz */; };
 		46C53E1A2BF60F8500CCB606 /* Flying_Pteradactal_Dinosaur.scn in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E072BF60F8500CCB606 /* Flying_Pteradactal_Dinosaur.scn */; };
@@ -39,6 +38,12 @@
 		46C53E272BF60F8500CCB606 /* Triceratops.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E142BF60F8500CCB606 /* Triceratops.usdz */; };
 		46C53E2A2BF61AFE00CCB606 /* Home-Background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E282BF61AFE00CCB606 /* Home-Background.mp3 */; };
 		46C53E2C2BF61F6C00CCB606 /* T-Rex_Dinosaur_Biting_Attack_Loop.scn in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E2B2BF61F6C00CCB606 /* T-Rex_Dinosaur_Biting_Attack_Loop.scn */; };
+		46C53E2E2BF6201900CCB606 /* Animated_T-Rex_Dinosaur_Fight_Loop.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E2D2BF6201900CCB606 /* Animated_T-Rex_Dinosaur_Fight_Loop.usdz */; };
+		46C53E302BF6202D00CCB606 /* Animated_T-Rex_Dinosaur_Fight_Loop.scn in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E2F2BF6202D00CCB606 /* Animated_T-Rex_Dinosaur_Fight_Loop.scn */; };
+		46C53E322BF6329A00CCB606 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C53E312BF6329A00CCB606 /* Coordinator.swift */; };
+		46C53E342BF6340400CCB606 /* Mosasaurus.scn in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E332BF6340400CCB606 /* Mosasaurus.scn */; };
+		46C53E362BF63A8600CCB606 /* triceratops_skeleton.scn in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E352BF63A8600CCB606 /* triceratops_skeleton.scn */; };
+		46C53E382BF63ABE00CCB606 /* STEGO.scn in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E372BF63ABE00CCB606 /* STEGO.scn */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +80,6 @@
 		46C53DFA2BF60F1E00CCB606 /* PlaySound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 		46C53DFB2BF60F1E00CCB606 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		46C53E002BF60F5E00CCB606 /* Markerview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Markerview.swift; sourceTree = "<group>"; };
-		46C53E032BF60F8500CCB606 /* Animated_T-Rex_Dinosaur_Fight_Loop.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Animated_T-Rex_Dinosaur_Fight_Loop.usdz"; sourceTree = "<group>"; };
 		46C53E042BF60F8500CCB606 /* archaeopteryx.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = archaeopteryx.scn; sourceTree = "<group>"; };
 		46C53E052BF60F8500CCB606 /* archaeopteryx.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = archaeopteryx.usdz; sourceTree = "<group>"; };
 		46C53E072BF60F8500CCB606 /* Flying_Pteradactal_Dinosaur.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Flying_Pteradactal_Dinosaur.scn; sourceTree = "<group>"; };
@@ -94,6 +98,12 @@
 		46C53E142BF60F8500CCB606 /* Triceratops.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Triceratops.usdz; sourceTree = "<group>"; };
 		46C53E282BF61AFE00CCB606 /* Home-Background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Home-Background.mp3"; sourceTree = "<group>"; };
 		46C53E2B2BF61F6C00CCB606 /* T-Rex_Dinosaur_Biting_Attack_Loop.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "T-Rex_Dinosaur_Biting_Attack_Loop.scn"; sourceTree = "<group>"; };
+		46C53E2D2BF6201900CCB606 /* Animated_T-Rex_Dinosaur_Fight_Loop.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = "Animated_T-Rex_Dinosaur_Fight_Loop.usdz"; path = "../../../../../../Downloads/Animated_T-Rex_Dinosaur_Fight_Loop.usdz"; sourceTree = "<group>"; };
+		46C53E2F2BF6202D00CCB606 /* Animated_T-Rex_Dinosaur_Fight_Loop.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Animated_T-Rex_Dinosaur_Fight_Loop.scn"; path = "../../../../../../Downloads/Animated_T-Rex_Dinosaur_Fight_Loop.scn"; sourceTree = "<group>"; };
+		46C53E312BF6329A00CCB606 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		46C53E332BF6340400CCB606 /* Mosasaurus.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Mosasaurus.scn; sourceTree = "<group>"; };
+		46C53E352BF63A8600CCB606 /* triceratops_skeleton.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = triceratops_skeleton.scn; sourceTree = "<group>"; };
+		46C53E372BF63ABE00CCB606 /* STEGO.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = STEGO.scn; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +154,7 @@
 		46C53DC82BF60EAF00CCB606 /* Dino-AR */ = {
 			isa = PBXGroup;
 			children = (
+				46C53E312BF6329A00CCB606 /* Coordinator.swift */,
 				46C53DC92BF60EAF00CCB606 /* Dino_ARApp.swift */,
 				46C53DCB2BF60EAF00CCB606 /* ContentView.swift */,
 				46C53E012BF60F5E00CCB606 /* Views */,
@@ -204,7 +215,6 @@
 		46C53E152BF60F8500CCB606 /* Ar models */ = {
 			isa = PBXGroup;
 			children = (
-				46C53E032BF60F8500CCB606 /* Animated_T-Rex_Dinosaur_Fight_Loop.usdz */,
 				46C53E042BF60F8500CCB606 /* archaeopteryx.scn */,
 				46C53E052BF60F8500CCB606 /* archaeopteryx.usdz */,
 				46C53E072BF60F8500CCB606 /* Flying_Pteradactal_Dinosaur.scn */,
@@ -212,7 +222,11 @@
 				46C53E092BF60F8500CCB606 /* godzilla_Amphibia.scn */,
 				46C53E0A2BF60F8500CCB606 /* godzilla_Amphibia.usdz */,
 				46C53E0B2BF60F8500CCB606 /* Mosasaurus.usdz */,
+				46C53E332BF6340400CCB606 /* Mosasaurus.scn */,
 				46C53E0C2BF60F8500CCB606 /* STEGO.usdz */,
+				46C53E372BF63ABE00CCB606 /* STEGO.scn */,
+				46C53E2D2BF6201900CCB606 /* Animated_T-Rex_Dinosaur_Fight_Loop.usdz */,
+				46C53E2F2BF6202D00CCB606 /* Animated_T-Rex_Dinosaur_Fight_Loop.scn */,
 				46C53E0D2BF60F8500CCB606 /* Suchominus_-_LowPoly.scn */,
 				46C53E0E2BF60F8500CCB606 /* Suchominus_-_LowPoly.usdz */,
 				46C53E0F2BF60F8500CCB606 /* T-Rex_Dinosaur_Biting_Attack_Loop.usdz */,
@@ -220,6 +234,7 @@
 				46C53E102BF60F8500CCB606 /* trex.scn */,
 				46C53E112BF60F8500CCB606 /* trex.usdz */,
 				46C53E122BF60F8500CCB606 /* triceratops_skeleton.usdz */,
+				46C53E352BF63A8600CCB606 /* triceratops_skeleton.scn */,
 				46C53E132BF60F8500CCB606 /* Triceratops.scn */,
 				46C53E142BF60F8500CCB606 /* Triceratops.usdz */,
 			);
@@ -339,13 +354,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				46C53E182BF60F8500CCB606 /* archaeopteryx.usdz in Resources */,
-				46C53E162BF60F8500CCB606 /* Animated_T-Rex_Dinosaur_Fight_Loop.usdz in Resources */,
 				46C53E262BF60F8500CCB606 /* Triceratops.scn in Resources */,
 				46C53E1B2BF60F8500CCB606 /* Flying_Pteradactal_Dinosaur.usdz in Resources */,
 				46C53E1A2BF60F8500CCB606 /* Flying_Pteradactal_Dinosaur.scn in Resources */,
 				46C53E242BF60F8500CCB606 /* trex.usdz in Resources */,
+				46C53E382BF63ABE00CCB606 /* STEGO.scn in Resources */,
+				46C53E302BF6202D00CCB606 /* Animated_T-Rex_Dinosaur_Fight_Loop.scn in Resources */,
+				46C53E362BF63A8600CCB606 /* triceratops_skeleton.scn in Resources */,
 				46C53E222BF60F8500CCB606 /* T-Rex_Dinosaur_Biting_Attack_Loop.usdz in Resources */,
 				46C53E1F2BF60F8500CCB606 /* STEGO.usdz in Resources */,
+				46C53E342BF6340400CCB606 /* Mosasaurus.scn in Resources */,
 				46C53E2A2BF61AFE00CCB606 /* Home-Background.mp3 in Resources */,
 				46C53E272BF60F8500CCB606 /* Triceratops.usdz in Resources */,
 				46C53E2C2BF61F6C00CCB606 /* T-Rex_Dinosaur_Biting_Attack_Loop.scn in Resources */,
@@ -359,6 +377,7 @@
 				46C53E212BF60F8500CCB606 /* Suchominus_-_LowPoly.usdz in Resources */,
 				46C53E202BF60F8500CCB606 /* Suchominus_-_LowPoly.scn in Resources */,
 				46C53E252BF60F8500CCB606 /* triceratops_skeleton.usdz in Resources */,
+				46C53E2E2BF6201900CCB606 /* Animated_T-Rex_Dinosaur_Fight_Loop.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +410,7 @@
 				46C53DFD2BF60F1E00CCB606 /* Icons.swift in Sources */,
 				46C53DCA2BF60EAF00CCB606 /* Dino_ARApp.swift in Sources */,
 				46C53DFF2BF60F1E00CCB606 /* Toast.swift in Sources */,
+				46C53E322BF6329A00CCB606 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

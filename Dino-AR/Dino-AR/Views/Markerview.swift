@@ -24,8 +24,8 @@ struct ARViewContainer: UIViewRepresentable {
         sceneView.showsStatistics = true
         sceneView.delegate = context.coordinator
 
-        let pinchGesture = UIPinchGestureRecognizer(target: context.coordinator, action: #selector(context.coordinator.handlePinch(_:)))
-        sceneView.addGestureRecognizer(pinchGesture)
+//        let pinchGesture = UIPinchGestureRecognizer(target: context.coordinator, action: #selector(context.coordinator.handlePinch(_:)))
+//        sceneView.addGestureRecognizer(pinchGesture)
 
         // Set initial scale to 50%
         if let node = dinosaurNode {
@@ -55,34 +55,6 @@ struct ARViewContainer: UIViewRepresentable {
             self.isAnimating = isAnimating // Initialize isAnimating
         }
         
-        @objc func handlePinch(_ gesture: UIPinchGestureRecognizer) {
-            guard let node = dinosaurNode else { return }
-            if gesture.state == .changed {
-                let pinchScaleX = Float(gesture.scale)
-                let pinchScaleY = Float(gesture.scale)
-                let pinchScaleZ = Float(gesture.scale)
-                node.scale = SCNVector3(pinchScaleX, pinchScaleY, pinchScaleZ)
-            }
-        }
-        
-        // Function to start animation
-        func startAnimation() {
-            // Check if animation is already running
-            guard !isAnimating else { return }
-            
-            // Start animation
-            isAnimating = true
-            // Add your animation code here
-        }
-        
-        // Function to stop animation
-        func stopAnimation() {
-            // Stop all animations
-               isAnimating = false
-               dinosaurNode?.removeAllActions() // This removes all actions, including explicit animations
-               dinosaurNode?.removeAllAnimations() // This removes all implicit animations
-           }
-
 
         func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
             guard let imageAnchor = anchor as? ARImageAnchor else {
@@ -98,6 +70,7 @@ struct ARViewContainer: UIViewRepresentable {
             var positionOffsetx: Float = 0.4
             var positionOffsety: Float = 0.0
             var positionOffsetz: Float = 0.0
+            var dinosaurName: String = ""
             
             if let imageName = imageAnchor.referenceImage.name {
                 switch imageName {
@@ -122,6 +95,63 @@ struct ARViewContainer: UIViewRepresentable {
                     rotationAngle = .pi * 1.5
                     positionOffsetx = 0.2
                     scaleFactor = 0.004
+//                    positionOffsetz = 2
+                case "marker3":
+                    sceneName = "Flying_Pteradactal_Dinosaur.scn"
+                    nodeName = "scene"
+      
+                    rotationAngle = .pi * 1.5
+                    positionOffsetx = 0.2
+                    scaleFactor = 0.01
+//                    positionOffsetz = 2
+                case "marker4":
+                    sceneName = "archaeopteryx.scn"
+                    nodeName = "scene"
+      
+                    rotationAngle = .pi * 1.5
+                    positionOffsetx = 0.2
+                    scaleFactor = 0.03
+//                    positionOffsetz = 2
+                case "marker5":
+                    sceneName = "Mosasaurus.scn"
+                    nodeName = "scene"
+      
+                    rotationAngle = .pi * 1.5
+                    positionOffsetx = 0.2
+                    scaleFactor = 0.004
+                    positionOffsetz = 1
+                case "marker6":
+                    sceneName = "Animated_T-Rex_Dinosaur_Fight_Loop.scn"
+                    nodeName = "scene"
+      
+                    rotationAngle = .pi * 1.5
+                    positionOffsetx = 0.2
+                    scaleFactor = 0.005
+//                    positionOffsetz = 2
+                case "marker7":
+                    sceneName = "Triceratops.scn"
+                    nodeName = "scene"
+      
+                    rotationAngle = .pi * 1.5
+                    positionOffsetx = 0.2
+                    scaleFactor = 0.008
+//                    positionOffsetz = 2
+                    positionOffsety = 1
+                case "marker8":
+                    sceneName = "triceratops_skeleton.scn"
+                    nodeName = "scene"
+      
+                    rotationAngle = .pi * 1.5
+                    positionOffsetx = 0.2
+                    scaleFactor = 0.01
+//                    positionOffsetz = 2
+                case "marker9":
+                    sceneName = "STEGO.scn"
+                    nodeName = "scene"
+      
+                    rotationAngle = .pi * 1.5
+                    positionOffsetx = 0.2
+                    scaleFactor = 0.01
 //                    positionOffsetz = 2
                 default:
                     // Handle other cases if needed
@@ -164,34 +194,26 @@ struct ARViewContainer: UIViewRepresentable {
 struct Markerview: View {
     @State private var isAnimating: Bool = false // Added state variable for animation control
     @State private var rotationAngle: Float = .pi // Added state variable for rotation angle
+    @State private var  isMute = false
     
     var body: some View {
         VStack {
             ARViewContainer(isAnimating: isAnimating, rotationAngle: rotationAngle)
             
             Button(action: {
-                // Toggle animation state
-                self.isAnimating.toggle()
-            }, label: {
-                Text(isAnimating ? "Stop Animation" : "Play Animation")
-            })
-            .padding()
-            
-            Button(action: {
-                // Change rotation angle
-                switch self.rotationAngle {
-                case .pi:
-                    self.rotationAngle = .pi / 2 // 90 degrees
-                case .pi / 2:
-                    self.rotationAngle = .pi * 2 // 360 degrees
-                case .pi * 2:
-                    self.rotationAngle = .pi * 1.5 // 270 degrees
-                default:
-                    self.rotationAngle = .pi // Default to 180 degrees
-                }
-            }, label: {
-                Text("Change Rotation Angle")
-            })
+                isMute.toggle()
+                   if isMute {
+                       stopSound()
+                   } else {
+                       playSound(sound: "Home-Background", type: "mp3")
+                   }
+            }) {
+                if isMute == false {
+                    SpeakerIcon()
+                   } else {
+                       MuteIcon()
+                   }
+            }
             .padding()
         }
     }
