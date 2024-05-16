@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46C53DCA2BF60EAF00CCB606 /* Dino_ARApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C53DC92BF60EAF00CCB606 /* Dino_ARApp.swift */; };
+		46C53DCC2BF60EAF00CCB606 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C53DCB2BF60EAF00CCB606 /* ContentView.swift */; };
+		46C53DCE2BF60EB100CCB606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C53DCD2BF60EB100CCB606 /* Assets.xcassets */; };
+		46C53DD12BF60EB100CCB606 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C53DD02BF60EB100CCB606 /* Preview Assets.xcassets */; };
+		46C53DD32BF60EB100CCB606 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C53DD22BF60EB100CCB606 /* Persistence.swift */; };
+		46C53DD62BF60EB100CCB606 /* Dino_AR.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46C53DD42BF60EB100CCB606 /* Dino_AR.xcdatamodeld */; };
+		46C53DE02BF60EB100CCB606 /* Dino_ARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C53DDF2BF60EB100CCB606 /* Dino_ARTests.swift */; };
+		46C53DEA2BF60EB100CCB606 /* Dino_ARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C53DE92BF60EB100CCB606 /* Dino_ARUITests.swift */; };
+		46C53DEC2BF60EB100CCB606 /* Dino_ARUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C53DEB2BF60EB100CCB606 /* Dino_ARUITestsLaunchTests.swift */; };
+		46C53DFD2BF60F1E00CCB606 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C53DF92BF60F1E00CCB606 /* Icons.swift */; };
+		46C53DFE2BF60F1E00CCB606 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C53DFA2BF60F1E00CCB606 /* PlaySound.swift */; };
+		46C53DFF2BF60F1E00CCB606 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C53DFB2BF60F1E00CCB606 /* Toast.swift */; };
+		46C53E022BF60F5E00CCB606 /* Markerview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C53E002BF60F5E00CCB606 /* Markerview.swift */; };
+		46C53E162BF60F8500CCB606 /* Animated_T-Rex_Dinosaur_Fight_Loop.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E032BF60F8500CCB606 /* Animated_T-Rex_Dinosaur_Fight_Loop.usdz */; };
+		46C53E172BF60F8500CCB606 /* archaeopteryx.scn in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E042BF60F8500CCB606 /* archaeopteryx.scn */; };
+		46C53E182BF60F8500CCB606 /* archaeopteryx.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E052BF60F8500CCB606 /* archaeopteryx.usdz */; };
+		46C53E192BF60F8500CCB606 /* dinosaur.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E062BF60F8500CCB606 /* dinosaur.usdz */; };
+		46C53E1A2BF60F8500CCB606 /* Flying_Pteradactal_Dinosaur.scn in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E072BF60F8500CCB606 /* Flying_Pteradactal_Dinosaur.scn */; };
+		46C53E1B2BF60F8500CCB606 /* Flying_Pteradactal_Dinosaur.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E082BF60F8500CCB606 /* Flying_Pteradactal_Dinosaur.usdz */; };
+		46C53E1C2BF60F8500CCB606 /* godzilla_Amphibia.scn in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E092BF60F8500CCB606 /* godzilla_Amphibia.scn */; };
+		46C53E1D2BF60F8500CCB606 /* godzilla_Amphibia.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E0A2BF60F8500CCB606 /* godzilla_Amphibia.usdz */; };
+		46C53E1E2BF60F8500CCB606 /* Mosasaurus.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E0B2BF60F8500CCB606 /* Mosasaurus.usdz */; };
+		46C53E1F2BF60F8500CCB606 /* STEGO.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E0C2BF60F8500CCB606 /* STEGO.usdz */; };
+		46C53E202BF60F8500CCB606 /* Suchominus_-_LowPoly.scn in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E0D2BF60F8500CCB606 /* Suchominus_-_LowPoly.scn */; };
+		46C53E212BF60F8500CCB606 /* Suchominus_-_LowPoly.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E0E2BF60F8500CCB606 /* Suchominus_-_LowPoly.usdz */; };
+		46C53E222BF60F8500CCB606 /* T-Rex_Dinosaur_Biting_Attack_Loop.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E0F2BF60F8500CCB606 /* T-Rex_Dinosaur_Biting_Attack_Loop.usdz */; };
+		46C53E232BF60F8500CCB606 /* trex.scn in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E102BF60F8500CCB606 /* trex.scn */; };
+		46C53E242BF60F8500CCB606 /* trex.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E112BF60F8500CCB606 /* trex.usdz */; };
+		46C53E252BF60F8500CCB606 /* triceratops_skeleton.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E122BF60F8500CCB606 /* triceratops_skeleton.usdz */; };
+		46C53E262BF60F8500CCB606 /* Triceratops.scn in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E132BF60F8500CCB606 /* Triceratops.scn */; };
+		46C53E272BF60F8500CCB606 /* Triceratops.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 46C53E142BF60F8500CCB606 /* Triceratops.usdz */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46C53DDC2BF60EB100CCB606 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46C53DBE2BF60EAF00CCB606 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46C53DC52BF60EAF00CCB606;
+			remoteInfo = "Dino-AR";
+		};
+		46C53DE62BF60EB100CCB606 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46C53DBE2BF60EAF00CCB606 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46C53DC52BF60EAF00CCB606;
+			remoteInfo = "Dino-AR";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46C53DC62BF60EAF00CCB606 /* Dino-AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dino-AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C53DC92BF60EAF00CCB606 /* Dino_ARApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dino_ARApp.swift; sourceTree = "<group>"; };
+		46C53DCB2BF60EAF00CCB606 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		46C53DCD2BF60EB100CCB606 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46C53DD02BF60EB100CCB606 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		46C53DD22BF60EB100CCB606 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		46C53DD52BF60EB100CCB606 /* Dino_AR.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dino_AR.xcdatamodel; sourceTree = "<group>"; };
+		46C53DDB2BF60EB100CCB606 /* Dino-ARTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dino-ARTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C53DDF2BF60EB100CCB606 /* Dino_ARTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dino_ARTests.swift; sourceTree = "<group>"; };
+		46C53DE52BF60EB100CCB606 /* Dino-ARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dino-ARUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C53DE92BF60EB100CCB606 /* Dino_ARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dino_ARUITests.swift; sourceTree = "<group>"; };
+		46C53DEB2BF60EB100CCB606 /* Dino_ARUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dino_ARUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		46C53DF92BF60F1E00CCB606 /* Icons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		46C53DFA2BF60F1E00CCB606 /* PlaySound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		46C53DFB2BF60F1E00CCB606 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		46C53E002BF60F5E00CCB606 /* Markerview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Markerview.swift; sourceTree = "<group>"; };
+		46C53E032BF60F8500CCB606 /* Animated_T-Rex_Dinosaur_Fight_Loop.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Animated_T-Rex_Dinosaur_Fight_Loop.usdz"; sourceTree = "<group>"; };
+		46C53E042BF60F8500CCB606 /* archaeopteryx.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = archaeopteryx.scn; sourceTree = "<group>"; };
+		46C53E052BF60F8500CCB606 /* archaeopteryx.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = archaeopteryx.usdz; sourceTree = "<group>"; };
+		46C53E062BF60F8500CCB606 /* dinosaur.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = dinosaur.usdz; sourceTree = "<group>"; };
+		46C53E072BF60F8500CCB606 /* Flying_Pteradactal_Dinosaur.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Flying_Pteradactal_Dinosaur.scn; sourceTree = "<group>"; };
+		46C53E082BF60F8500CCB606 /* Flying_Pteradactal_Dinosaur.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Flying_Pteradactal_Dinosaur.usdz; sourceTree = "<group>"; };
+		46C53E092BF60F8500CCB606 /* godzilla_Amphibia.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = godzilla_Amphibia.scn; sourceTree = "<group>"; };
+		46C53E0A2BF60F8500CCB606 /* godzilla_Amphibia.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = godzilla_Amphibia.usdz; sourceTree = "<group>"; };
+		46C53E0B2BF60F8500CCB606 /* Mosasaurus.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Mosasaurus.usdz; sourceTree = "<group>"; };
+		46C53E0C2BF60F8500CCB606 /* STEGO.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = STEGO.usdz; sourceTree = "<group>"; };
+		46C53E0D2BF60F8500CCB606 /* Suchominus_-_LowPoly.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Suchominus_-_LowPoly.scn"; sourceTree = "<group>"; };
+		46C53E0E2BF60F8500CCB606 /* Suchominus_-_LowPoly.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Suchominus_-_LowPoly.usdz"; sourceTree = "<group>"; };
+		46C53E0F2BF60F8500CCB606 /* T-Rex_Dinosaur_Biting_Attack_Loop.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "T-Rex_Dinosaur_Biting_Attack_Loop.usdz"; sourceTree = "<group>"; };
+		46C53E102BF60F8500CCB606 /* trex.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = trex.scn; sourceTree = "<group>"; };
+		46C53E112BF60F8500CCB606 /* trex.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = trex.usdz; sourceTree = "<group>"; };
+		46C53E122BF60F8500CCB606 /* triceratops_skeleton.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = triceratops_skeleton.usdz; sourceTree = "<group>"; };
+		46C53E132BF60F8500CCB606 /* Triceratops.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Triceratops.scn; sourceTree = "<group>"; };
+		46C53E142BF60F8500CCB606 /* Triceratops.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Triceratops.usdz; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46C53DC32BF60EAF00CCB606 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C53DD82BF60EB100CCB606 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C53DE22BF60EB100CCB606 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46C53DBD2BF60EAF00CCB606 = {
+			isa = PBXGroup;
+			children = (
+				46C53DC82BF60EAF00CCB606 /* Dino-AR */,
+				46C53DDE2BF60EB100CCB606 /* Dino-ARTests */,
+				46C53DE82BF60EB100CCB606 /* Dino-ARUITests */,
+				46C53DC72BF60EAF00CCB606 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46C53DC72BF60EAF00CCB606 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46C53DC62BF60EAF00CCB606 /* Dino-AR.app */,
+				46C53DDB2BF60EB100CCB606 /* Dino-ARTests.xctest */,
+				46C53DE52BF60EB100CCB606 /* Dino-ARUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46C53DC82BF60EAF00CCB606 /* Dino-AR */ = {
+			isa = PBXGroup;
+			children = (
+				46C53DC92BF60EAF00CCB606 /* Dino_ARApp.swift */,
+				46C53DCB2BF60EAF00CCB606 /* ContentView.swift */,
+				46C53E012BF60F5E00CCB606 /* Views */,
+				46C53DFC2BF60F1E00CCB606 /* Helpers */,
+				46C53DCD2BF60EB100CCB606 /* Assets.xcassets */,
+				46C53E152BF60F8500CCB606 /* Ar models */,
+				46C53DD22BF60EB100CCB606 /* Persistence.swift */,
+				46C53DD42BF60EB100CCB606 /* Dino_AR.xcdatamodeld */,
+				46C53DCF2BF60EB100CCB606 /* Preview Content */,
+			);
+			path = "Dino-AR";
+			sourceTree = "<group>";
+		};
+		46C53DCF2BF60EB100CCB606 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				46C53DD02BF60EB100CCB606 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		46C53DDE2BF60EB100CCB606 /* Dino-ARTests */ = {
+			isa = PBXGroup;
+			children = (
+				46C53DDF2BF60EB100CCB606 /* Dino_ARTests.swift */,
+			);
+			path = "Dino-ARTests";
+			sourceTree = "<group>";
+		};
+		46C53DE82BF60EB100CCB606 /* Dino-ARUITests */ = {
+			isa = PBXGroup;
+			children = (
+				46C53DE92BF60EB100CCB606 /* Dino_ARUITests.swift */,
+				46C53DEB2BF60EB100CCB606 /* Dino_ARUITestsLaunchTests.swift */,
+			);
+			path = "Dino-ARUITests";
+			sourceTree = "<group>";
+		};
+		46C53DFC2BF60F1E00CCB606 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				46C53DF92BF60F1E00CCB606 /* Icons.swift */,
+				46C53DFA2BF60F1E00CCB606 /* PlaySound.swift */,
+				46C53DFB2BF60F1E00CCB606 /* Toast.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		46C53E012BF60F5E00CCB606 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				46C53E002BF60F5E00CCB606 /* Markerview.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		46C53E152BF60F8500CCB606 /* Ar models */ = {
+			isa = PBXGroup;
+			children = (
+				46C53E032BF60F8500CCB606 /* Animated_T-Rex_Dinosaur_Fight_Loop.usdz */,
+				46C53E042BF60F8500CCB606 /* archaeopteryx.scn */,
+				46C53E052BF60F8500CCB606 /* archaeopteryx.usdz */,
+				46C53E062BF60F8500CCB606 /* dinosaur.usdz */,
+				46C53E072BF60F8500CCB606 /* Flying_Pteradactal_Dinosaur.scn */,
+				46C53E082BF60F8500CCB606 /* Flying_Pteradactal_Dinosaur.usdz */,
+				46C53E092BF60F8500CCB606 /* godzilla_Amphibia.scn */,
+				46C53E0A2BF60F8500CCB606 /* godzilla_Amphibia.usdz */,
+				46C53E0B2BF60F8500CCB606 /* Mosasaurus.usdz */,
+				46C53E0C2BF60F8500CCB606 /* STEGO.usdz */,
+				46C53E0D2BF60F8500CCB606 /* Suchominus_-_LowPoly.scn */,
+				46C53E0E2BF60F8500CCB606 /* Suchominus_-_LowPoly.usdz */,
+				46C53E0F2BF60F8500CCB606 /* T-Rex_Dinosaur_Biting_Attack_Loop.usdz */,
+				46C53E102BF60F8500CCB606 /* trex.scn */,
+				46C53E112BF60F8500CCB606 /* trex.usdz */,
+				46C53E122BF60F8500CCB606 /* triceratops_skeleton.usdz */,
+				46C53E132BF60F8500CCB606 /* Triceratops.scn */,
+				46C53E142BF60F8500CCB606 /* Triceratops.usdz */,
+			);
+			path = "Ar models";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46C53DC52BF60EAF00CCB606 /* Dino-AR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46C53DEF2BF60EB100CCB606 /* Build configuration list for PBXNativeTarget "Dino-AR" */;
+			buildPhases = (
+				46C53DC22BF60EAF00CCB606 /* Sources */,
+				46C53DC32BF60EAF00CCB606 /* Frameworks */,
+				46C53DC42BF60EAF00CCB606 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dino-AR";
+			productName = "Dino-AR";
+			productReference = 46C53DC62BF60EAF00CCB606 /* Dino-AR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46C53DDA2BF60EB100CCB606 /* Dino-ARTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46C53DF22BF60EB100CCB606 /* Build configuration list for PBXNativeTarget "Dino-ARTests" */;
+			buildPhases = (
+				46C53DD72BF60EB100CCB606 /* Sources */,
+				46C53DD82BF60EB100CCB606 /* Frameworks */,
+				46C53DD92BF60EB100CCB606 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46C53DDD2BF60EB100CCB606 /* PBXTargetDependency */,
+			);
+			name = "Dino-ARTests";
+			productName = "Dino-ARTests";
+			productReference = 46C53DDB2BF60EB100CCB606 /* Dino-ARTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		46C53DE42BF60EB100CCB606 /* Dino-ARUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46C53DF52BF60EB100CCB606 /* Build configuration list for PBXNativeTarget "Dino-ARUITests" */;
+			buildPhases = (
+				46C53DE12BF60EB100CCB606 /* Sources */,
+				46C53DE22BF60EB100CCB606 /* Frameworks */,
+				46C53DE32BF60EB100CCB606 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46C53DE72BF60EB100CCB606 /* PBXTargetDependency */,
+			);
+			name = "Dino-ARUITests";
+			productName = "Dino-ARUITests";
+			productReference = 46C53DE52BF60EB100CCB606 /* Dino-ARUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46C53DBE2BF60EAF00CCB606 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					46C53DC52BF60EAF00CCB606 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					46C53DDA2BF60EB100CCB606 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 46C53DC52BF60EAF00CCB606;
+					};
+					46C53DE42BF60EB100CCB606 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 46C53DC52BF60EAF00CCB606;
+					};
+				};
+			};
+			buildConfigurationList = 46C53DC12BF60EAF00CCB606 /* Build configuration list for PBXProject "Dino-AR" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46C53DBD2BF60EAF00CCB606;
+			productRefGroup = 46C53DC72BF60EAF00CCB606 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46C53DC52BF60EAF00CCB606 /* Dino-AR */,
+				46C53DDA2BF60EB100CCB606 /* Dino-ARTests */,
+				46C53DE42BF60EB100CCB606 /* Dino-ARUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46C53DC42BF60EAF00CCB606 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C53E182BF60F8500CCB606 /* archaeopteryx.usdz in Resources */,
+				46C53E162BF60F8500CCB606 /* Animated_T-Rex_Dinosaur_Fight_Loop.usdz in Resources */,
+				46C53E262BF60F8500CCB606 /* Triceratops.scn in Resources */,
+				46C53E1B2BF60F8500CCB606 /* Flying_Pteradactal_Dinosaur.usdz in Resources */,
+				46C53E1A2BF60F8500CCB606 /* Flying_Pteradactal_Dinosaur.scn in Resources */,
+				46C53E242BF60F8500CCB606 /* trex.usdz in Resources */,
+				46C53E222BF60F8500CCB606 /* T-Rex_Dinosaur_Biting_Attack_Loop.usdz in Resources */,
+				46C53E1F2BF60F8500CCB606 /* STEGO.usdz in Resources */,
+				46C53E272BF60F8500CCB606 /* Triceratops.usdz in Resources */,
+				46C53E192BF60F8500CCB606 /* dinosaur.usdz in Resources */,
+				46C53DD12BF60EB100CCB606 /* Preview Assets.xcassets in Resources */,
+				46C53E1D2BF60F8500CCB606 /* godzilla_Amphibia.usdz in Resources */,
+				46C53E1C2BF60F8500CCB606 /* godzilla_Amphibia.scn in Resources */,
+				46C53E172BF60F8500CCB606 /* archaeopteryx.scn in Resources */,
+				46C53DCE2BF60EB100CCB606 /* Assets.xcassets in Resources */,
+				46C53E1E2BF60F8500CCB606 /* Mosasaurus.usdz in Resources */,
+				46C53E232BF60F8500CCB606 /* trex.scn in Resources */,
+				46C53E212BF60F8500CCB606 /* Suchominus_-_LowPoly.usdz in Resources */,
+				46C53E202BF60F8500CCB606 /* Suchominus_-_LowPoly.scn in Resources */,
+				46C53E252BF60F8500CCB606 /* triceratops_skeleton.usdz in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C53DD92BF60EB100CCB606 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C53DE32BF60EB100CCB606 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46C53DC22BF60EAF00CCB606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C53E022BF60F5E00CCB606 /* Markerview.swift in Sources */,
+				46C53DD62BF60EB100CCB606 /* Dino_AR.xcdatamodeld in Sources */,
+				46C53DFE2BF60F1E00CCB606 /* PlaySound.swift in Sources */,
+				46C53DD32BF60EB100CCB606 /* Persistence.swift in Sources */,
+				46C53DCC2BF60EAF00CCB606 /* ContentView.swift in Sources */,
+				46C53DFD2BF60F1E00CCB606 /* Icons.swift in Sources */,
+				46C53DCA2BF60EAF00CCB606 /* Dino_ARApp.swift in Sources */,
+				46C53DFF2BF60F1E00CCB606 /* Toast.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C53DD72BF60EB100CCB606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C53DE02BF60EB100CCB606 /* Dino_ARTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C53DE12BF60EB100CCB606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C53DEA2BF60EB100CCB606 /* Dino_ARUITests.swift in Sources */,
+				46C53DEC2BF60EB100CCB606 /* Dino_ARUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46C53DDD2BF60EB100CCB606 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46C53DC52BF60EAF00CCB606 /* Dino-AR */;
+			targetProxy = 46C53DDC2BF60EB100CCB606 /* PBXContainerItemProxy */;
+		};
+		46C53DE72BF60EB100CCB606 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46C53DC52BF60EAF00CCB606 /* Dino-AR */;
+			targetProxy = 46C53DE62BF60EB100CCB606 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		46C53DED2BF60EB100CCB606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46C53DEE2BF60EB100CCB606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46C53DF02BF60EB100CCB606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dino-AR/Preview Content\"";
+				DEVELOPMENT_TEAM = BA4ULKZFP8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nowen.Dino-AR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46C53DF12BF60EB100CCB606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dino-AR/Preview Content\"";
+				DEVELOPMENT_TEAM = BA4ULKZFP8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nowen.Dino-AR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		46C53DF32BF60EB100CCB606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BA4ULKZFP8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nowen.Dino-ARTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dino-AR.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dino-AR";
+			};
+			name = Debug;
+		};
+		46C53DF42BF60EB100CCB606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BA4ULKZFP8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nowen.Dino-ARTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dino-AR.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dino-AR";
+			};
+			name = Release;
+		};
+		46C53DF62BF60EB100CCB606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BA4ULKZFP8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nowen.Dino-ARUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Dino-AR";
+			};
+			name = Debug;
+		};
+		46C53DF72BF60EB100CCB606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BA4ULKZFP8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nowen.Dino-ARUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Dino-AR";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46C53DC12BF60EAF00CCB606 /* Build configuration list for PBXProject "Dino-AR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C53DED2BF60EB100CCB606 /* Debug */,
+				46C53DEE2BF60EB100CCB606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46C53DEF2BF60EB100CCB606 /* Build configuration list for PBXNativeTarget "Dino-AR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C53DF02BF60EB100CCB606 /* Debug */,
+				46C53DF12BF60EB100CCB606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46C53DF22BF60EB100CCB606 /* Build configuration list for PBXNativeTarget "Dino-ARTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C53DF32BF60EB100CCB606 /* Debug */,
+				46C53DF42BF60EB100CCB606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46C53DF52BF60EB100CCB606 /* Build configuration list for PBXNativeTarget "Dino-ARUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C53DF62BF60EB100CCB606 /* Debug */,
+				46C53DF72BF60EB100CCB606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		46C53DD42BF60EB100CCB606 /* Dino_AR.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				46C53DD52BF60EB100CCB606 /* Dino_AR.xcdatamodel */,
+			);
+			currentVersion = 46C53DD52BF60EB100CCB606 /* Dino_AR.xcdatamodel */;
+			path = Dino_AR.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 46C53DBE2BF60EAF00CCB606 /* Project object */;
+}
