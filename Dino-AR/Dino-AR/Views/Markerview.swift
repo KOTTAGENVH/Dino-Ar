@@ -17,13 +17,13 @@ struct ARViewContainer: UIViewRepresentable {
     var defaultAnimationPaused: Bool = false
     @State private var noMarkerDetected = false
     @State private var currentImageName: String?
-
+    
     func makeCoordinator() -> Coordinator {
         return Coordinator(dinosaurNode: dinosaurNode, noMarkerDetected: $noMarkerDetected)
     }
     
     func makeUIView(context: Context) -> ARSCNView {
-        sceneView.showsStatistics = true
+        sceneView.showsStatistics = false
         sceneView.delegate = context.coordinator
         
         if let node = dinosaurNode {
@@ -61,13 +61,13 @@ struct ARViewContainer: UIViewRepresentable {
                 return
             }
             print("Found marker: \(imageAnchor.referenceImage.name ?? "Unknown")")
-            
+            print("Found imageAnchor: \(imageAnchor.isTracked)")
             if !imageAnchor.isTracked {
-                   stopSound()
-                   print("Not pointed to marker")
-                   self.noMarkerDetected = true
-                   return
-               }
+                stopSound()
+                print("Not pointed to marker")
+                self.noMarkerDetected = true
+                return
+            }
             
             var sceneName: String
             var nodeName: String

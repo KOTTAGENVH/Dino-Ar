@@ -12,12 +12,12 @@ import ARKit
 class Coordinator: NSObject, ARSCNViewDelegate {
     var dinosaurNode: SCNNode?
     var currentScale: SCNVector3 = SCNVector3(0.1, 0.1, 0.1) // Initial scale
-
+    
     lazy var pinchGesture: UIPinchGestureRecognizer = {
         let gesture = UIPinchGestureRecognizer(target: self, action: #selector(handlePinch(_:)))
         return gesture
     }()
-
+    
     @objc func handlePinch(_ gesture: UIPinchGestureRecognizer) {
         guard let node = dinosaurNode else { return }
         print("dinosaurnode/\(node.name ?? "Unknown")")
