@@ -12,23 +12,23 @@ struct ContentView: View {
     @State private var  isMute = false
     @State private var isCheckboxChecked = false
     @State private var showToast = false
-
+    
     var body: some View {
         NavigationView {
             ZStack {
-                      Image("wallpaper2")
-                        .resizable()
-                        .scaledToFill()
-                        .edgesIgnoringSafeArea(.all)
-                        .onAppear {
-                            if (isMute == false){
-                                // Play the background sound when ContentView appears
-                                playSound(sound: "Home-Background", type: "mp3")
-                            }
+                Image("wallpaper2")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+                    .onAppear {
+                        if (isMute == false){
+                            // Play the background sound when ContentView appears
+                            playSound(sound: "Home-Background", type: "mp3")
                         }
+                    }
                 VStack {
                     Spacer()
-//                    Spacer()
+                    //                    Spacer()
                     HStack {
                         NavigationLink(destination: Markerview().onAppear{
                             stopSound()
@@ -60,58 +60,58 @@ struct ContentView: View {
                         .padding(.top, 50)
                         .disabled(!isCheckboxChecked)
                         .onTapGesture {
-                                                if !isCheckboxChecked {
-                                                    showToast = true
-                                                }
-                                            }
+                            if !isCheckboxChecked {
+                                showToast = true
+                            }
+                        }
                     }
                     .padding()
                     
                     HStack {
                         Spacer().frame(width: 10)
-                          
-                          Toggle(isOn: $isCheckboxChecked) {
-                              Text("I accept the terms and conditions")
-                                  .foregroundColor(.white)
-                                  .onTapGesture {
-                                      // Open the hyperlink when clicked
-                                      if let url = URL(string: "https://www.apple.com") {
-                                          UIApplication.shared.open(url)
-                                      }
-                                  }
-//                                  .padding(.top, 20)
-                              
-                          }
-                          .padding()
-                          .onTapGesture {
-                                    showToast = false
-                                        }
-                                              
+                        
+                        Toggle(isOn: $isCheckboxChecked) {
+                            Text("I accept the terms and conditions")
+                                .foregroundColor(.white)
+                                .onTapGesture {
+                                    // Open the hyperlink when clicked
+                                    if let url = URL(string: "https://www.apple.com") {
+                                        UIApplication.shared.open(url)
+                                    }
+                                }
+                            //                                  .padding(.top, 20)
+                            
+                        }
+                        .padding()
+                        .onTapGesture {
+                            showToast = false
+                        }
+                        
                         Spacer().frame(width: 10)
-                      }
-
-                      Spacer()
+                    }
+                    
+                    Spacer()
                     Button(action: {
                         isMute.toggle()
-                           if isMute {
-                               stopSound()
-                           } else {
-                               playSound(sound: "Home-Background", type: "mp3")
-                           }
+                        if isMute {
+                            stopSound()
+                        } else {
+                            playSound(sound: "Home-Background", type: "mp3")
+                        }
                     }) {
                         if isMute == false {
+                            MuteIcon()
+                        } else {
                             SpeakerIcon()
-                           } else {
-                               MuteIcon()
-                           }
+                        }
                     }
-
+                    
                 }
                 ToastView(message: "Please accept the Terms & Conditions", isShowing: $showToast)
-                                   .padding(.horizontal)
-                                   .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
-                                   .padding(.bottom, UIApplication.shared.windows.first?.safeAreaInsets.bottom)
-                                   .edgesIgnoringSafeArea(.all)
+                    .padding(.horizontal)
+                    .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
+                    .padding(.bottom, UIApplication.shared.windows.first?.safeAreaInsets.bottom)
+                    .edgesIgnoringSafeArea(.all)
             }
         }
         

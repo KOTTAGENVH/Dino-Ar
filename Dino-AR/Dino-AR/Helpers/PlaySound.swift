@@ -7,17 +7,33 @@
 
 import AVFoundation
 
-    var audioPlayer: AVAudioPlayer?
+var audioPlayer: AVAudioPlayer?
+var soundrecord: String = ""
 
-func playSound (sound: String, type: String) {
-    if let path = Bundle.main.path(forResource: sound, ofType: type) {
+func playSound(sound: String, type: String) {
+    if let soundURL = Bundle.main.url(forResource: sound, withExtension: type) {
         do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path))
-            audioPlayer?.play ()
+            soundrecord = sound
+            audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
+            audioPlayer?.play()
+        } catch let error {
+            print("ERROR: Could not play the audio file - \(error.localizedDescription)")
         }
-        catch {
-            print("ERROR: Could not find the audio file!")
+    } else {
+        print("ERROR: Audio file not found!")
+    }
+}
+
+func playLaterSound() {
+    if let soundURL = Bundle.main.url(forResource: soundrecord, withExtension: "mp3") {
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
+            audioPlayer?.play()
+        } catch let error {
+            print("ERROR: Could not play the audio file - \(error.localizedDescription)")
         }
+    } else {
+        print("ERROR: Audio file not found!")
     }
 }
 
