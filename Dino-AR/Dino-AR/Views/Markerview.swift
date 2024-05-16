@@ -121,7 +121,7 @@ struct ARViewContainer: UIViewRepresentable {
       
                     rotationAngle = .pi * 1.5
                     positionOffsetx = 0.2
-                    scaleFactor = 0.01
+                    scaleFactor = 0.004
 //                    positionOffsetz = 2
                 default:
                     // Handle other cases if needed
