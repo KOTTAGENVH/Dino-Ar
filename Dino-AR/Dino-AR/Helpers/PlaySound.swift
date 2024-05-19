@@ -11,14 +11,10 @@ var audioPlayer: AVAudioPlayer?
 var soundrecord: String = ""
 
 func playSound(sound: String, type: String) {
-    // Stop any currently playing audio
-//    if let player = audioPlayer, player.isPlaying {
-//        player.stop()
-//    }
-
     if let soundURL = Bundle.main.url(forResource: sound, withExtension: type) {
         do {
             // Initialize and play the new audio
+            soundrecord = sound
             audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
             audioPlayer?.play()
         } catch let error {
@@ -29,6 +25,7 @@ func playSound(sound: String, type: String) {
     }
 }
 func playLaterSound() {
+    print("Last Sound:/(soundrecord)")
     if let soundURL = Bundle.main.url(forResource: soundrecord, withExtension: "mp3") {
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: soundURL)

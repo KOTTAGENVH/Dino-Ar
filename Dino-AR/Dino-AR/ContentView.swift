@@ -30,7 +30,7 @@ struct ContentView: View {
                     Spacer()
                     //                    Spacer()
                     HStack {
-                        NavigationLink(destination: Markerview().onAppear{
+                        NavigationLink(destination: Instructions().onAppear{
                             stopSound()
                         }) {
                             Text("Instructions")
@@ -75,7 +75,7 @@ struct ContentView: View {
                                 .foregroundColor(.white)
                                 .onTapGesture {
                                     // Open the hyperlink when clicked
-                                    if let url = URL(string: "https://www.apple.com") {
+                                    if let url = URL(string: "https://dino-ar-web.vercel.app/legal") {
                                         UIApplication.shared.open(url)
                                     }
                                 }
