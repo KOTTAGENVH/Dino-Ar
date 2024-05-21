@@ -41,6 +41,11 @@ struct Instruction2view: View {
                     Image(systemName: "speaker.wave.3")
                         .foregroundColor(.black)
                 }
+                Text("Potrait mode is Recomended")
+                    .font(.body)
+                    .fontWeight(.bold)
+                    .foregroundColor(.black)
+                    .padding(2)
                 Text("For demonstrations please subscribe")
                     .font(.body)
                     .fontWeight(.bold)
