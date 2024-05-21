@@ -28,7 +28,6 @@ struct ContentView: View {
                     }
                 VStack {
                     Spacer()
-                    //                    Spacer()
                     HStack {
                         NavigationLink(destination: Instructions().onAppear{
                             stopSound()
@@ -79,19 +78,18 @@ struct ContentView: View {
                                         UIApplication.shared.open(url)
                                     }
                                 }
-                            //                                  .padding(.top, 20)
                             
                         }
                         .padding()
                         .onTapGesture {
-                            showToast = false
+                            showToast = false  //T&C toggle
                         }
                         
                         Spacer().frame(width: 10)
                     }
                     
                     Spacer()
-                    Button(action: {
+                    Button(action: {  //Mute/Unmute button
                         isMute.toggle()
                         if isMute {
                             stopSound()
@@ -107,7 +105,7 @@ struct ContentView: View {
                     }
                     
                 }
-                ToastView(message: "Please accept the Terms & Conditions", isShowing: $showToast)
+                ToastView(message: "Please accept the Terms & Conditions", isShowing: $showToast) //Toast View
                     .padding(.horizontal)
                     .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
                     .padding(.bottom, UIApplication.shared.windows.first?.safeAreaInsets.bottom)
