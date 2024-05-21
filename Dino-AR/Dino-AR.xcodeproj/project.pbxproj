@@ -13,7 +13,6 @@
 		46A1FFED2BFA60AE00F4B792 /* Instructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A1FFEC2BFA60AE00F4B792 /* Instructions.swift */; };
 		46A1FFF12BFA65F300F4B792 /* Instruction1view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A1FFF02BFA65F300F4B792 /* Instruction1view.swift */; };
 		46A1FFF32BFA660600F4B792 /* Instruction2view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A1FFF22BFA660600F4B792 /* Instruction2view.swift */; };
-		46A1FFF52BFA661400F4B792 /* Instruction3view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A1FFF42BFA661400F4B792 /* Instruction3view.swift */; };
 		46C53DCA2BF60EAF00CCB606 /* Dino_ARApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C53DC92BF60EAF00CCB606 /* Dino_ARApp.swift */; };
 		46C53DCC2BF60EAF00CCB606 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C53DCB2BF60EAF00CCB606 /* ContentView.swift */; };
 		46C53DCE2BF60EB100CCB606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C53DCD2BF60EB100CCB606 /* Assets.xcassets */; };
@@ -65,7 +64,6 @@
 		46A1FFEC2BFA60AE00F4B792 /* Instructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructions.swift; sourceTree = "<group>"; };
 		46A1FFF02BFA65F300F4B792 /* Instruction1view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction1view.swift; sourceTree = "<group>"; };
 		46A1FFF22BFA660600F4B792 /* Instruction2view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction2view.swift; sourceTree = "<group>"; };
-		46A1FFF42BFA661400F4B792 /* Instruction3view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction3view.swift; sourceTree = "<group>"; };
 		46C53DC62BF60EAF00CCB606 /* Dino-AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dino-AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C53DC92BF60EAF00CCB606 /* Dino_ARApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dino_ARApp.swift; sourceTree = "<group>"; };
 		46C53DCB2BF60EAF00CCB606 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -125,7 +123,6 @@
 			children = (
 				46A1FFF02BFA65F300F4B792 /* Instruction1view.swift */,
 				46A1FFF22BFA660600F4B792 /* Instruction2view.swift */,
-				46A1FFF42BFA661400F4B792 /* Instruction3view.swift */,
 			);
 			path = "Sub Views";
 			sourceTree = "<group>";
@@ -384,7 +381,6 @@
 				46C53DCC2BF60EAF00CCB606 /* ContentView.swift in Sources */,
 				46C53DFD2BF60F1E00CCB606 /* Icons.swift in Sources */,
 				46A1FFED2BFA60AE00F4B792 /* Instructions.swift in Sources */,
-				46A1FFF52BFA661400F4B792 /* Instruction3view.swift in Sources */,
 				46A1FFF12BFA65F300F4B792 /* Instruction1view.swift in Sources */,
 				46C53DCA2BF60EAF00CCB606 /* Dino_ARApp.swift in Sources */,
 				46C53DFF2BF60F1E00CCB606 /* Toast.swift in Sources */,
