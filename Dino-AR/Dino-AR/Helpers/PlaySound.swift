@@ -11,7 +11,7 @@ var audioPlayer: AVAudioPlayer?
 var soundrecord: String = ""
 
 func playSound(sound: String, type: String) {
-    if let soundURL = Bundle.main.url(forResource: sound, withExtension: type) {
+    if let soundURL = Bundle.main.url(forResource: sound, withExtension: type, subdirectory: "Sounds") {
         do {
             // Initialize and play the new audio
             soundrecord = sound
@@ -21,12 +21,12 @@ func playSound(sound: String, type: String) {
             print("ERROR: Could not play the audio file - \(error.localizedDescription)")
         }
     } else {
-        print("ERROR: Audio file not found!")
+        print("ERROR: Audio file not found! \(Bundle.main.url(forResource: sound, withExtension: type, subdirectory: "Sounds"))")
     }
 }
 func playLaterSound() {
-    print("Last Sound:/(soundrecord)")
-    if let soundURL = Bundle.main.url(forResource: soundrecord, withExtension: "mp3") {
+    print("Last Sound:\(soundrecord)")
+    if let soundURL = Bundle.main.url(forResource: soundrecord, withExtension: "mp3", subdirectory: "Sounds") {
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
             audioPlayer?.play()
